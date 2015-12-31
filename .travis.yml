@@ -1,4 +1,4 @@
 
 language: java
-install: true
+java: 1.8
 script: ant test
