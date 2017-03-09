@@ -1,10 +1,15 @@
+sudo: false
 
 language: java
-jdk: 
+
+jdk:
  - oraclejdk8
+
+notifications:
+ email: false
 
 branches:
  only:
   - master
 
-script: ant test
+script: mvn clean
