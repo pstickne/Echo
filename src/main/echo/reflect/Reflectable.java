@@ -1,4 +1,4 @@
-package echo.reflect;
+package main.echo.reflect;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
