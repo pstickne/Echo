@@ -1,19 +1,19 @@
-package main.echo.reflect;
+package echo.reflect;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-public class Reflect 
+public class Reflect
 {
 	/**
 	 * This will create and return a new instance of the class.<br>
 	 * The nullary constructor will be called to initialize this class.
-	 * 
+	 *
 	 * @param pkg The package of the class
 	 * @param clazz The class to create
 	 * @return An instance of the newly created object
-	 * 
+	 *
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
@@ -30,13 +30,13 @@ public class Reflect
 	/**
 	 * This will create and return a new instance of the specified class.<br>
 	 * The constructor that matches the same signature defined in the argClassList will be called to initialize this class.
-	 * 
+	 *
 	 * @param pkg The package of the class
 	 * @param clazz The class to create
 	 * @param argClassList The signature of the constructor to initialize the instance with
 	 * @param args The arg list to the constructor
 	 * @return An instance of the newly created object
-	 * 
+	 *
 	 * @throws ClassNotFoundException
 	 * @throws InstantiationException
 	 * @throws IllegalAccessException
@@ -54,19 +54,19 @@ public class Reflect
 	
 	/**
 	 * Get a static field of a class.
-	 * 
+	 *
 	 * @param pkg The fully qualified package name of a class
 	 * @param clazz The class name
 	 * @param fieldStr The variable field you want to access
 	 * @return The value of the field
-	 * 
+	 *
 	 * @throws NoSuchMethodException
 	 * @throws SecurityException
 	 * @throws IllegalAccessException
 	 * @throws IllegalArgumentException
 	 * @throws InvocationTargetException
 	 * @throws ClassNotFoundException
-	 * @throws NoSuchFieldException 
+	 * @throws NoSuchFieldException
 	 */
 	public static Object field(String pkg, String clazz, String fieldStr) throws ClassNotFoundException, NoSuchFieldException, SecurityException, IllegalArgumentException, IllegalAccessException
 	{
@@ -92,16 +92,16 @@ public class Reflect
 	
 	/**
 	 * Get a field of a class instance.
-	 * 
+	 *
 	 * @param instance The instance of the class
 	 * @param fieldStr The variable field you want to access
 	 * @return The value of the field
-	 * 
+	 *
 	 * @throws NoSuchMethodException
 	 * @throws SecurityException
 	 * @throws IllegalAccessException
 	 * @throws IllegalArgumentException
-	 * @throws NoSuchFieldException 
+	 * @throws NoSuchFieldException
 	 * @throws InvocationTargetException
 	 */
 	public static Object field(Object instance, String fieldStr) throws IllegalArgumentException, IllegalAccessException, NoSuchFieldException, SecurityException
@@ -129,14 +129,14 @@ public class Reflect
 	/**
 	 * Run a static function of a class by using reflection.<br>
 	 * This is done by getting the declared method of the class with the given name.
-	 * By default, this static function cannot take any arguments. This method is then 
+	 * By default, this static function cannot take any arguments. This method is then
 	 * statically run outside of any instance of the class.
-	 * 
+	 *
 	 * @param pkg The fully qualified package name of the class
 	 * @param clazz The class name
 	 * @param function The function you want to call on the class
 	 * @return The result of calling the function
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static Object method(String pkg, String clazz, String function) throws Exception
 	{
@@ -149,14 +149,14 @@ public class Reflect
 	 * This is done by getting the declared method of the class with the given
 	 * name and function signature. This method is then statically run outside
 	 * of any instance of the class.
-	 *  
+	 *
 	 * @param pkg The fully qualified package name of a class
 	 * @param clazz The class name
 	 * @param function The function you want to call on the class
 	 * @param argClassList The function signature
 	 * @param args The arguments to supply to the function
 	 * @return The result of calling the function
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static Object method(String pkg, String clazz, String function, Class<?>[] argClassList, Object[] args) throws Exception
 	{
@@ -189,11 +189,11 @@ public class Reflect
 	 * This is done by getting the declared method of the class with the given name.
 	 * By default, this function cannot take any arguments. The method is then invoked
 	 * on the instance of the class.
-	 * 
+	 *
 	 * @param instance The instance of the class
 	 * @param function The function you want to call on the class
 	 * @return The result of calling the function
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static Object method(Object instance, String function) throws Exception
 	{
@@ -205,13 +205,13 @@ public class Reflect
 	 * Run a class function on an instance of the class by using reflection.<br>
 	 * This is done by getting the declared method of the class with the given name
 	 * and function signature. The method is then invoked on the instance of the class.
-	 * 
+	 *
 	 * @param instance The instance of the class
 	 * @param function The function you want to call on the class
 	 * @param argClassList The function signature
 	 * @param args The arguments to supply to the function
 	 * @return The result of calling the function
-	 * @throws Exception 
+	 * @throws Exception
 	 */
 	public static Object method(Object instance, String function, Class<?>[] argClassList, Object[] args) throws Exception
 	{
