@@ -3,7 +3,7 @@
   <groupId>com.pstickney.echo</groupId>
   <artifactId>Echo</artifactId>
 	<packaging>pom</packaging>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.2</version>
 	<modules>
 		<module>LexicalAnalyzer</module>
 		<module>SyntaxAnalyzer</module>
@@ -13,7 +13,7 @@
 	<name>Echo</name>
   <scm>
   	<developerConnection>scm:git:git@github.com:pstickne/Echo.git</developerConnection>
-    <tag>HEAD</tag>
+    <tag>Echo-0.0.2</tag>
   </scm>
   <dependencies>
   	<dependency>
