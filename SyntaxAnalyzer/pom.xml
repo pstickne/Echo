@@ -9,7 +9,7 @@
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 	
-	<artifactId>Syntax Analyzer</artifactId>
+	<artifactId>SyntaxAnalyzer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<description>The parser turns the token sequence into an abstract syntax tree.</description>
 
