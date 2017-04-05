@@ -2,8 +2,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.pstickney.echo</groupId>
   <artifactId>Echo</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>Echo</name>
+	<packaging>pom</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<modules>
+		<module>LexicalAnalyzer</module>
+		<module>SyntaxAnalyzer</module>
+		<module>SemanticAnalyzer</module>
+	</modules>
+	<name>Echo</name>
   <scm>
   	<developerConnection>scm:git:git@github.com:pstickne/Echo.git</developerConnection>
     <tag>HEAD</tag>
