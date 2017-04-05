@@ -11,5 +11,8 @@ notifications:
 branches:
  only:
   - master
+  - development
 
-script: mvn clean
+install: true
+
+script: mvn clean install
