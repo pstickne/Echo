@@ -17,7 +17,9 @@ branches:
   - master
   - development
 
-install: true
+install:
+- git config --local user.name "TravisCI"
+- git config --local user.email "pstick158@gmail.com"
 
 script:
 - mvn clean install
