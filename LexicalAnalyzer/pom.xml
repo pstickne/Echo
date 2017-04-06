@@ -8,9 +8,8 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<artifactId>LexicalAnalyzer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<description>The scanner converts the source program’s stream of characters into a stream of tokens, removing whitespace, removing comments and expanding macros along the way.</description>
-	
+
 </project>
