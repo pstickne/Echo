@@ -15,4 +15,6 @@ branches:
 
 install: true
 
-script: mvn clean install
+script:
+- mvn clean install
+- mvn release:clean release:prepare
