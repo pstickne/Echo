@@ -17,4 +17,4 @@ install: true
 
 script:
 - mvn clean install
-- mvn release:clean release:prepare
+- mvn -B release:clean release:prepare
