@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 git config --local user.name $GH_USER_NAME
 git config --local user.email $GH_USER_EMAIL
