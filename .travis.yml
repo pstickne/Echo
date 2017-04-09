@@ -16,6 +16,8 @@ branches:
  only:
   - development
 
+install: true
+
 script: mvn clean install
 
 after_success: .travis/push.sh
