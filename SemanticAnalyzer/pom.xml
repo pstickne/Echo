@@ -5,12 +5,11 @@
 	<parent>
 		<artifactId>Echo</artifactId>
 		<groupId>com.pstickney.echo</groupId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.3</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<artifactId>SemanticAnalyzer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<description>During semantic analysis we have to check legality rules and while doing so, we tie up the pieces of the syntax tree (by resolving identifier references, inserting cast operations for implicit coercions, etc.) to form a semantic graph.</description>
 
 </project>
