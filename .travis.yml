@@ -16,9 +16,7 @@ branches:
  only:
   - development
 
-install:
-- bump current || gem install bump
-- bump patch --no-commit --no-bundle
+install: true
 
 script: mvn clean install
 
