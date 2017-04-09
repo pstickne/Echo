@@ -14,13 +14,12 @@ notifications:
 
 branches:
  only:
-  - master
   - development
 
 install:
-- git config --local user.name "TravisCI"
-- git config --local user.email "pstick158@gmail.com"
+- bump current || gem install bump
+- bump patch --no-commit --no-bundle
 
-script:
-- mvn clean install
-- mvn -B release:clean release:prepare
+script: mvn clean install
+
+after_success: .travis/push.sh
