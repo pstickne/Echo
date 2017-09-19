@@ -1,5 +1,9 @@
 sudo: false
 
+env:
+ global:
+  - secure: "HzFeR4ZFL400/rkSGeg/gUAzmIIAh8anvQkAWl69MhLNmoftAdZKesrUj0bSP5tN96E//7HvjSLBciDZuiXWY3GH3zYBHbulr0NGu0ZoRHxu53SlAIM+XNaYW8/KvCI7PFY/rMb6x0I/Vcw5opZK666rDpSJsX0iy8kaxlsC3lA2G9366KNolIzcD8rL6hIF3CdBA7s8YP+fggK6jTi9XkEBBeedj9P0vJqIys7xlegIjtrIFrxZ8rrYmFrtkR5ncRNjaxIhMEHRr10nrqgdpHA+jNvQt4Km2E2ybkp8iOAdKISgPMk3LAJOhfhUeMWfbtjZabLafti2Zz5trFyi1VvboBIKSA0ChjG/UIYZQixalxrSm7Flo8/itu1r3NGyRK4XKQS9YIi6Wu4SutQpxBSVmhOWQzHkYd1j5bMSuWPO3c5s5jIiSKghcO6vWKGmmKS8VW8XFR9UIbF/HclulF2NRKvcwXl0XVfivmaL/1fAtaA6DvlMOvj3ircTU9RRsJn9vL3ffH9ePaT27Itdz3tZNGVgyMgV421oepY5iiz7ztl/7Zvq5Wo7BzQ0WREXp1EiK+2gRLK3dUHspDrQOn0Uv4n7pECVVrueVNv5PCOW5XITzW+V6/ePAe0nU2leV+tbNjv/JEeEZZwGScdauwLXpnFbLppsrUwqp054iTA="
+
 language: java
 
 jdk:
@@ -10,9 +14,10 @@ notifications:
 
 branches:
  only:
-  - master
   - development
 
 install: true
 
 script: mvn clean install
+
+after_success: .travis/push.sh
