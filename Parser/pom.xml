@@ -19,7 +19,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.pstickney.echo</groupId>
-			<artifactId>LexicalAnalyzer</artifactId>
+			<artifactId>Lexer</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
